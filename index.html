@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book librabry </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 class="text-center mt-5">Book Library</h1>
+    <div class="row ">
+        <div class="col-12 border border-2 border-dark rounded shadow w-50 mx-auto "style="margin-top: 100px; ">
+            <h5 class="mt-3">Book Name</h5>
+            <input type="text" id="bname" class="form-control mt-2 " placeholder="Enter the Book Name">
+            <h5 class="mt-3">Author</h5>
+            <input type="text" id="aname" class="form-control  mt-2" placeholder="Enter the Author Name">
+            <h5 class="mt-3">Book Category</h5>
+            <input type="text" id="bkcat" class="form-control mt-2" placeholder="Enter the Book Category">
+            <div>
+    <button  onclick="add()" class="btn btn-success  w-100 border border-5 border-dark mt-3">
+                                    Add Student
+                            </button>
+</div>
+        </div>
+    </div>
+    <div class="row">
+       <div class="col-12 mt-3">
+         <table class="table table-bordered table-success text-center">
+
+            <thead>
+                <tr>
+                    
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Book Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="addTable">
+
+            </tbody>
+
+        </table>
+       </div>
+
+    </div>
+
+</body>
+<script  src="./script.js"></script>
+</html>
